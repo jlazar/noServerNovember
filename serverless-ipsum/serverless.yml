@@ -1,0 +1,16 @@
+service: serverless-ipsum
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  ipsum:
+    handler: handler.ipsum
+    events:
+      - http:
+          method: get
+          path: /

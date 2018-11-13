@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lorem-ipsum": "^1.0.6"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.25.11"
+  }
+}
