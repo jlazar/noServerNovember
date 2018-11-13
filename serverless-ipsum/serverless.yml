@@ -13,4 +13,4 @@ functions:
     events:
       - http:
           method: get
-          path: /
+          path: /serverless-ipsum
