@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "giphy-js-sdk-core": "^1.0.6",
+    "lorem-ipsum": "^1.0.6"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.25.11"
+  }
+}

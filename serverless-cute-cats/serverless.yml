@@ -1,0 +1,16 @@
+service: serverless-cats
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  cats:
+    handler: handler.cats
+    events:
+      - http:
+          method: get
+          path: /serverless-cats
