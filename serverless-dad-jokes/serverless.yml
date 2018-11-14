@@ -1,0 +1,22 @@
+
+service: serverless-dad-jokes
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  dadjoke:
+    handler: handler.tweet
+    events:
+      - http:
+          method: get
+          path: /dadjoke
+      - schedule:
+        name: scheduled-dad-joke-tweets
+        description: 'This event trigger runs every day to send a dad joke'
+        rate: cron(0 14 * * *)
+        enabled: true
